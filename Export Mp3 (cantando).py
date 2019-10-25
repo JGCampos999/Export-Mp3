@@ -2,8 +2,8 @@ from gtts import gTTS
 language = 'pt'
 bicho = ['pintinho', 'galinha', 'galo', 'perú', 'capote', 'gato',
          'cachorro', 'cabra', 'bode','vaca','boi']
-som = ['piu', 'có', 'corócocó', 'gulu gulu', 'to fraco', 'miau',
-        'au au', 'meee', 'beee', 'mooh', 'muuh']
+som = ['piu', 'có', 'corócocó', 'gulu gulu', 'tô fraco', 'miau',
+        'áu áu', 'mééé', 'bééé', 'móóh', 'múúh']
 letra = ''
 c = 0
 for i in range(len(bicho)):
@@ -26,4 +26,3 @@ for i in range(len(bicho)):
     
 output = gTTS(text=letra,lang=language,slow=False)
 output.save('output.mp3')
-
